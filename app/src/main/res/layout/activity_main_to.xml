@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainToActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/Black">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="微信"
+            android:textSize="60px"
+            android:textColor="@color/black2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30px"
+            />
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="80px"
+            android:layout_height="80px" 
+            android:src="@mipmap/icon_add"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50px"
+            />
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px" 
+            android:src="@mipmap/search_icon"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/add"
+            android:layout_marginRight="100px"/>
+    </RelativeLayout>
+    <com.hjm.bottomtabbar.BottomTabBar
+        android:id="@+id/bottom_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.hjm.bottomtabbar.BottomTabBar>
+</LinearLayout>
